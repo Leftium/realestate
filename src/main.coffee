@@ -1,7 +1,5 @@
-console.log 'CoffeeScript from Parcel Starter!'
+mapOptions = 
+    center: new naver.maps.LatLng(37.3595704, 127.105399)
+    zoom: 10
 
-# How to use .env* files in code:
-require('dotenv').config()
-console.log "process.env.NODE_ENV (set by Parcel): #{process.env.NODE_ENV}"
-console.log "process.env.SECRET (set inside .env files): #{process.env.SECRET}"
-
+map = new naver.maps.Map('map', mapOptions)

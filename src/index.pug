@@ -1,16 +1,28 @@
+- var naverMapsScript = `https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${process.env.NAVER_MAPS_CLIENT_ID}`
+
 doctype html
 html(lang='en')
 head
-    title Parcel Starter
+    title Real Estate
     meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(charset='utf-8')
-body
-    include:marked ../README.md
 
-    h4 How to use .env* files in pug template:
-    ul
-        li process.env.NODE_ENV (set by Parcel): #{process.env.NODE_ENV}
-        li process.env.SECRET (from .env* files):  #{process.env.SECRET}
+    script(src=naverMapsScript)
+
+    style(type="text/css").
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+body
+    div(id='map')
 
     script(src='main.coffee')
 
