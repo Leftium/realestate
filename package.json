@@ -1,0 +1,17 @@
+{
+  "name": "parcel-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "jstransformer-marked": "^1.0.3"
+  },
+  "devDependencies": {
+    "coffeescript": "^2.4.1",
+    "pug": "^2.0.3"
+  },
+  "scripts": {
+    "start": "parcel src/index.pug --port 80 --log-level 4"
+  }
+}
