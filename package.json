@@ -13,5 +13,8 @@
   },
   "scripts": {
     "start": "parcel src/index.pug --port 80 --log-level 4"
-  }
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
 }
